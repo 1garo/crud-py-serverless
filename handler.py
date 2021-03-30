@@ -14,11 +14,7 @@ def list_contacts():
     print(table)
   print("-" * 60)
 
-def add_new_contact():
-  name = input("Informe o seu nome: ")
-  cellphone = input("Informe o seu número de telefone: ")
-  print("Adicionando um novo contato a sua agenda!")
-
+def add_new_contact(name, cellphone):
   db.create_contact(name, cellphone)
 
 def update_contact():
