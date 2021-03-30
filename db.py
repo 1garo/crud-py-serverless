@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("contacts.db")
+conn = sqlite3.connect("contacts.db", check_same_thread=False)
 
 def initial_table():
   cursor = conn.cursor()
