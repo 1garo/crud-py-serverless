@@ -1,0 +1,6 @@
+terraform
+__pycache__
+*.db
+node_modules
+venv
+package-lock.json
